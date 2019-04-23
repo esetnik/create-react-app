@@ -193,6 +193,7 @@ module.exports = function(api, opts, env) {
       isEnvTest &&
         // Transform dynamic import to require
         require('babel-plugin-dynamic-import-node'),
+      require('react-hot-loader/babel'),
     ].filter(Boolean),
     overrides: [
       isFlowEnabled && {
